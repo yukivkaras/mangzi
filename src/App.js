@@ -59,7 +59,7 @@ class App extends Component {
       <ul>{results(urls,carStores)}</ul>
       </div>
       <div id="pag">
-        <Pagination showSizeChanger onShowSizeChange={onShowSizeChange} defaultCurrent={3} total={500} />
+        <Pagination showSizeChanger onShowSizeChange={onShowSizeChange} defaultCurrent={1} total={500} />
       </div>
       </div>
     );

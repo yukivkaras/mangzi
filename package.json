@@ -1,15 +1,11 @@
 {
   "name": "mangzi",
   "version": "0.1.0",
+  "homepage": "https://yukivkaras.github.io/App",
   "private": true,
   "dependencies": {
     "antd": "^3.16.1",
-    "babel": "^6.23.0",
     "babel-plugin-import": "^1.11.0",
-    "babel-preset-env": "^1.7.0",
-    "gh-pages": "^2.0.1",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
@@ -18,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

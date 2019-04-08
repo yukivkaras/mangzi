@@ -50,7 +50,7 @@ class App extends Component {
         <img src={mxjh} height="30%" width="40%" alt=""/>
         <img id="picright" src={jjpd} height="20%" width="20%" alt=""/>
         <div id="text">
-        <p id="textContext" contenteditable="true">一流的动力，二手的惊喜。同品牌的车，来看看我的价位!</p>
+        <p id="textContext" contenteditable="true">一流的动力，二手的惊喜</p>
         </div>
       
       <div id="pics">

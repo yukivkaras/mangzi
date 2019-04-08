@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/mangzi/static/media/haocheju.12e85137.png"
   },
   {
-    "revision": "a2af6b3ff88b3b20e5fc",
+    "revision": "5fbe357525e6a20144a0",
     "url": "/mangzi/static/css/main.527dd535.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/mangzi/static/media/chezhijian.79c4f664.png"
   },
   {
-    "revision": "a2af6b3ff88b3b20e5fc",
-    "url": "/mangzi/static/js/main.cf3e5d1d.chunk.js"
+    "revision": "5fbe357525e6a20144a0",
+    "url": "/mangzi/static/js/main.2e140a67.chunk.js"
   },
   {
     "revision": "b03f7b7a5cc842f00bdc413e7d516d21",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/mangzi/static/css/2.c1a0a982.chunk.css"
   },
   {
-    "revision": "e8f4df93b49ed9f977865c0db95c771d",
+    "revision": "bc2e6cab462f106c127805fe146b7612",
     "url": "/mangzi/index.html"
   }
 ];

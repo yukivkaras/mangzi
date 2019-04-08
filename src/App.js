@@ -27,7 +27,9 @@ const urls = ["https://gzyuanfeng.souche.com","https://gyxinqi.souche.com","http
 function results(urls,carStores){
   var doms = [];
   for(var i=0;i<urls.length;i++){
-    doms.push(<li id="item"><a href={urls[i]}><img src={carStores[i]} height="50%" width="50%" alt=""/></a></li>);
+    doms.push(<li id="item">
+    <a href={urls[i]}><img src={carStores[i]} height="50%" width="80%" alt=""/></a>
+    </li>);
     console.log(i)
   }
   return doms;
@@ -44,18 +46,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         </header>
-        <img src={jjpd} height="20%" width="20%" alt=""/>
+        <img id="picleft" src={jjpd} height="20%" width="20%" alt=""/>
         <img src={mxjh} height="30%" width="40%" alt=""/>
-        <img src={jjpd} height="20%" width="20%" alt=""/>
-        <p contenteditable="true">莽子牛逼</p>
-        <div id="search">
+        <img id="picright" src={jjpd} height="20%" width="20%" alt=""/>
+        <div id="text">
+        <p id="textContext" contenteditable="true">一流的动力，二手的惊喜。同品牌的车，来看看我的价位!</p>
+        </div>
+      
+      <div id="pics">
+      <div id="search">
         <Search
       placeholder="搜索你想要的车型"
       enterButton="搜索"
       size="large"
       onSearch={value => console.log(value)}/>
       </div>
-      <div id="pics">
       <ul>{results(urls,carStores)}</ul>
       </div>
       <div id="pag">

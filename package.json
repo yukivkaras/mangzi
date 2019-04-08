@@ -1,7 +1,7 @@
 {
   "name": "mangzi",
   "version": "0.1.0",
-  "homepage": "https://yukivkaras.github.io/App",
+  "homepage": "https://yukivkaras.github.io/mangzi",
   "private": true,
   "dependencies": {
     "antd": "^3.16.1",

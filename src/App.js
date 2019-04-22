@@ -26,9 +26,10 @@ const urls = ["https://gzyuanfeng.souche.com","https://gyxinqi.souche.com","http
 "https://gyhcj.souche.com","https://gyczj.souche.com","https://gycbl.souche.com","https://gz.souche.com"]
 function results(urls,carStores){
   var doms = [];
-  for(var i=0;i<urls.length;i++){
+  for(var i=0;i<urls.length-1;i=i+2){
     doms.push(<li id="item">
-    <a href={urls[i]}><img src={carStores[i]} height="50%" width="80%" alt=""/></a>
+    <a href={urls[i]}><img src={carStores[i]} height="500px" width="880px" alt=""/>
+    &nbsp<img src={carStores[i+1]} height="500px" width="880px" alt=""/></a>
     </li>);
     console.log(i)
   }
@@ -45,8 +46,125 @@ class App extends Component {
       
       <div className="App">
         <header className="App-header">
+     
         </header>
-        <img id="picleft" src={jjpd} height="20%" width="20%" alt=""/>
+        <div>
+	<div class="wrapper">
+		<div class="line line1">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line2">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line3">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line4">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line5">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line6">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line7">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line8">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line9">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line10">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+		<div class="line line11">
+			<span class="circle circle-top"></span>
+			<div class="dotted">
+				<span class="dot dot-top"></span>
+				<span class="dot dot-middle-top"></span>
+				<span class="dot dot-middle-bottom"></span>
+				<span class="dot dot-bottom"></span>
+			</div>
+			<span class="circle circle-bottom"></span>
+		</div>
+	</div>
+	
+</div>
+
+        <img id="picleft"  height="20%" width="20%" alt=""/>
         <img src={mxjh} height="30%" width="40%" alt=""/>
         <img id="picright" src={jjpd} height="20%" width="20%" alt=""/>
         <div id="text">
@@ -54,13 +172,7 @@ class App extends Component {
         </div>
       
       <div id="pics">
-      <div id="search">
-        <Search
-      placeholder="搜索你想要的车型"
-      enterButton="搜索"
-      size="large"
-      onSearch={value => console.log(value)}/>
-      </div>
+     
       <ul>{results(urls,carStores)}</ul>
       </div>
       <div id="pag">
